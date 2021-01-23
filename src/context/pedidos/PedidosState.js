@@ -20,7 +20,9 @@ const PedidosState = props => {
   // Get Pedidos Por Cliente
   const getPedidos = async () => {
     try {
-      const res = await axios.get("/api/pedidos");
+      const res = await axios.get(
+        "https://api.migueldias.net/lebrownie/pedidos"
+      );
 
       dispatch({
         type: GET_PEDIDOS,
@@ -43,7 +45,11 @@ const PedidosState = props => {
     };
 
     try {
-      const res = await axios.post("/api/pedidos", pedido, config);
+      const res = await axios.post(
+        "https://api.migueldias.net/lebrownie/pedidos",
+        pedido,
+        config
+      );
 
       dispatch({
         type: ADD_PEDIDO,

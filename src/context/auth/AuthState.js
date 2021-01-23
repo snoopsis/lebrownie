@@ -33,7 +33,7 @@ const AuthState = props => {
     setAuthToken(localStorage.token);
 
     try {
-      const res = await axios.get("/api/auth");
+      const res = await axios.get("https://api.migueldias.net/lebrownie/auth");
 
       dispatch({
         type: CLIENT_LOADED,
@@ -53,7 +53,11 @@ const AuthState = props => {
     };
 
     try {
-      const res = await axios.post("/api/clientes", formData, config);
+      const res = await axios.post(
+        "https://api.migueldias.net/lebrownie/clientes",
+        formData,
+        config
+      );
 
       dispatch({
         type: REGISTER_SUCCESS,
@@ -78,7 +82,11 @@ const AuthState = props => {
     };
 
     try {
-      const res = await axios.post("/api/auth", formData, config);
+      const res = await axios.post(
+        "https://api.migueldias.net/lebrownie/auth",
+        formData,
+        config
+      );
 
       dispatch({
         type: LOGIN_SUCCESS,
@@ -104,7 +112,7 @@ const AuthState = props => {
 
     try {
       const res = await axios.put(
-        `/api/clientes/${client._id}`,
+        `https://api.migueldias.net/lebrownie/clientes/${client._id}`,
         client,
         config
       );
@@ -131,7 +139,7 @@ const AuthState = props => {
 
     try {
       const res = await axios.put(
-        `/api/clientes/senha/${client._id}`,
+        `https://api.migueldias.net/lebrownie/clientes/senha/${client._id}`,
         client,
         config
       );

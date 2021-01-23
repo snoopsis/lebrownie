@@ -55,7 +55,7 @@ const Footer = () => {
           </ul>
           <img
             src="images/ssl.jpg"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "auto", maxWidth: 500 }}
             alt="SSL Site Seguro"
           />
           <p>LeBrownie © 2020</p>

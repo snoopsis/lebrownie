@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AlertContext from "../../context/alert/alertContext";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import "react-toastify/dist/ReactToastify.css";
 
 const Alerts = () => {
   const alertContext = useContext(AlertContext);
