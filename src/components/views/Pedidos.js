@@ -32,41 +32,41 @@ const Pedidos = () => {
               <div className="checkout" key={pedido._id}>
                 <div className="product-choosed center">
                   <div className="row">
-                    <div class="col s12">
+                    <div className="col s12">
                       <div
-                        class="chip"
+                        className="chip"
                         style={{ backgroundColor: "#f06292", color: "#fff" }}
                       >
                         Estamos Separando o seu Pedido
                       </div>
                     </div>
-                    <div class="col s12">
+                    <div className="col s12">
                       <div
-                        class="btn-floating btn-large scale-transition"
+                        className="btn-floating btn-large scale-transition"
                         style={{ backgroundColor: "#fce4ec" }}
                       >
-                        <i class="material-icons" style={{ color: "#000" }}>
+                        <i className="material-icons" style={{ color: "#000" }}>
                           add
                         </i>
                       </div>
                     </div>
-                    <div class="col s12" style={{ marginTop: "10px" }}>
-                      <div class="chip" style={{ backgroundColor: "#eee" }}>
+                    <div className="col s12" style={{ marginTop: "10px" }}>
+                      <div className="chip" style={{ backgroundColor: "#eee" }}>
                         O seu Produto esta a Caminho
                       </div>
                     </div>
-                    <div class="col s12">
+                    <div className="col s12">
                       <div
-                        class="btn-floating btn-large scale-transition"
+                        className="btn-floating btn-large scale-transition"
                         style={{ backgroundColor: "#eee" }}
                       >
-                        <i class="material-icons" style={{ color: "#000" }}>
+                        <i className="material-icons" style={{ color: "#000" }}>
                           add
                         </i>
                       </div>
                     </div>
-                    <div class="col s12" style={{ marginTop: "10px" }}>
-                      <div class="chip" style={{ backgroundColor: "#eee" }}>
+                    <div className="col s12" style={{ marginTop: "10px" }}>
+                      <div className="chip" style={{ backgroundColor: "#eee" }}>
                         Entregue, Obrigado!
                       </div>
                     </div>

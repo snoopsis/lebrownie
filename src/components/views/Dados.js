@@ -184,7 +184,7 @@ const Dados = props => {
                 className="btn center"
                 style={{ height: 33 }}
               >
-                <i className="fa fa-save"></i>Atualizar Meus Dados
+                Atualizar Meus Dados <i className="fa fa-save"></i>
               </button>
             </div>
           </form>
@@ -195,7 +195,7 @@ const Dados = props => {
             <input type="password" name="pass1" onChange={onChange} required />
             <input type="password" name="pass2" onChange={onChange} required />
             <button type="submit" className="btn center" style={{ height: 33 }}>
-              <i className="fa fa-key"></i> Atualizar Senha
+              Atualizar Senha <i className="fa fa-key"></i>
             </button>
           </form>
         </div>

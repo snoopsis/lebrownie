@@ -6,7 +6,7 @@ import AlertContext from "../../context/alert/alertContext";
 import Finalizado from "./Finalizado";
 import axios from "axios";
 
-const Carrinho = () => {
+const Carrinho = props => {
   // Contexto
   const carrinhoContext = useContext(CarrinhoContext);
   const authContext = useContext(AuthContext);
@@ -23,7 +23,7 @@ const Carrinho = () => {
     decreaseItem,
     addItem
   } = carrinhoContext;
-  const { client, updateClient, loadCliente } = authContext;
+  const { client, updateClient, loadCliente, isAuthenticated } = authContext;
   const { addPedido, getPedidos } = pedidosContext;
   // # Contexto
 
@@ -33,8 +33,12 @@ const Carrinho = () => {
     getCart();
     getPedidos();
     // eslint-disable-next-line
-  }, []);
+  }, [isAuthenticated]);
   // # Ciclo
+
+  if (isAuthenticated === false || carrinho.length === 0) {
+    props.history.push("/");
+  }
 
   const [loading, setLoading] = useState(false);
   const [finalizado, setFinalizado] = useState();
@@ -288,7 +292,7 @@ const Carrinho = () => {
                 <div className="col s8">
                   <div className="contents">
                     <button
-                      class="btn-floating btn-small scale-transition"
+                      className="btn-floating btn-small scale-transition"
                       style={{ backgroundColor: "#fce4ec", marginRight: 5 }}
                       onClick={() =>
                         decreaseItem({
@@ -301,7 +305,7 @@ const Carrinho = () => {
                         })
                       }
                     >
-                      <i class="material-icons" style={{ color: "#000" }}>
+                      <i className="material-icons" style={{ color: "#000" }}>
                         remove
                       </i>
                     </button>
@@ -314,7 +318,7 @@ const Carrinho = () => {
                       value={i.quantidade}
                     ></input>
                     <button
-                      class="btn-floating btn-small scale-transition"
+                      className="btn-floating btn-small scale-transition"
                       style={{ backgroundColor: "#fce4ec", marginLeft: 5 }}
                       onClick={() =>
                         addItem({
@@ -327,7 +331,7 @@ const Carrinho = () => {
                         })
                       }
                     >
-                      <i class="material-icons" style={{ color: "#000" }}>
+                      <i className="material-icons" style={{ color: "#000" }}>
                         add
                       </i>
                     </button>

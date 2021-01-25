@@ -54,7 +54,12 @@ const Login = props => {
         <div className="container">
           <div className="signin-contents">
             <div className="pages-title">
-              <h3>Log In</h3>
+              <h3>
+                Entrar, nao tem conta?{" "}
+                <Link to="/cadastro" style={{ color: "blue" }}>
+                  Cadastre se !
+                </Link>
+              </h3>
               <div className="line"></div>
             </div>
             <form onSubmit={onSubmit}>
@@ -77,9 +82,27 @@ const Login = props => {
               <button type="submit" className="btn" style={{ height: 33 }}>
                 <i className="fa"></i>Entrar
               </button>
+              <Link to="/cadastro">
+                {" "}
+                <button
+                  className="btn"
+                  style={{
+                    height: 33,
+                    backgroundColor: "#000",
+                    marginLeft: 15
+                  }}
+                >
+                  <i className="fa"></i>Cadastro
+                </button>
+              </Link>
               <Link
                 to="/recupera"
-                style={{ color: "blue", float: "right", fontWeight: 500 }}
+                style={{
+                  color: "#000",
+                  float: "right",
+                  fontWeight: 500,
+                  marginTop: 15
+                }}
               >
                 Esqueceu a Senha?
               </Link>

@@ -95,7 +95,7 @@ const Navbar = props => {
                 {carrinho.length > 0 && (
                   <Link to={isAuthenticated ? "/carrinho" : "/login"}>
                     <i className="fa fa-shopping-cart"></i>
-                    <sup>{carrinho.length}</sup>
+                    <sup>:D</sup>
                   </Link>
                 )}
                 {carrinho.length === 0 && (
@@ -166,11 +166,13 @@ const Navbar = props => {
               </Link>
             )}
           </li>
-          <li>
-            <Link to="/" onClick={() => offAll()}>
-              <i className="fa fa-share"></i>Sair
-            </Link>
-          </li>
+          {isAuthenticated && (
+            <li>
+              <Link to="/" onClick={() => offAll()}>
+                <i className="fa fa-share"></i>Sair
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
     </React.Fragment>
