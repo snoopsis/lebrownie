@@ -19,8 +19,7 @@ const CarrinhoState = props => {
         id: 1,
         nome: "Trio Maravilha",
         desc: "Delicioso Brownie Tradicional em Tripla",
-        img:
-          "https://img.elo7.com.br/product/zoom/1EBEC6F/mini-brownie-bolo.jpg",
+        img: "images/trio-maravilha.jpg",
         valor: 15,
         quantidade: 1,
         carrinho: false
@@ -29,8 +28,7 @@ const CarrinhoState = props => {
         id: 2,
         nome: "Brownie Caramelo",
         desc: "Recheado de Caramelo Salgado",
-        img:
-          "https://i1.wp.com/comsaborperfeito.com/wp-content/uploads/2017/07/brownie-recheado-de-caramelo.jpg?fit=700%2C467&ssl=1",
+        img: "images/brownie-caramelo.jpg",
         valor: 1,
         quantidade: 1,
         carrinho: false
@@ -39,8 +37,7 @@ const CarrinhoState = props => {
         id: 3,
         nome: "Negao",
         desc: "Brownie Meio Amargo, Chocolate Intenso.",
-        img:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZJlBk1_nUvG3crMqSiYdKgnyo4Q0sc2h5Gib2cmZIMrmfoPmH&usqp=CAU",
+        img: "images/negao.jpg",
         valor: 7,
         quantidade: 1,
         carrinho: false
@@ -49,8 +46,7 @@ const CarrinhoState = props => {
         id: 4,
         nome: "LowCarb",
         desc: "Delicioso e Sem Culpa, Brownie com Nozes",
-        img:
-          "https://img.cybercook.com.br/receitas/690/brownie-low-carb-com-nozes-623x350.jpeg",
+        img: "images/lowcarb.jpeg",
         valor: 9,
         quantidade: 1,
         carrinho: false

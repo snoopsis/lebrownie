@@ -8,7 +8,7 @@ const Hero = () => {
           <div className="slide-content" align="center">
             {/* <div className="mask"></div> */}
             <img
-              src="https://imagens.migueldias.net/bgnew.png"
+              src="images/bgnew.png"
               alt="LeBrownie"
               style={{ maxWidth: 380 }}
             />
